@@ -207,7 +207,7 @@ h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.
 .erecord .yr{color:var(--ink-soft)}
 .egroup{margin:2.6rem 0 1rem;font-size:1.15rem}
 .egroup:first-of-type{margin-top:0}
-@media (max-width:48rem){.erecord li{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:48rem){.erecord li{grid-template-columns:minmax(0,1fr) auto;gap:.35rem 1rem;align-items:center}.erecord .yr{white-space:nowrap}.erecord li>:first-child{grid-column:1 / -1}.erecord .yr,.erecord .role{margin:0}}
 
 .sgallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:62rem}
 .sgallery figure{margin:0;overflow:hidden;background:var(--paper-deep)}
@@ -219,6 +219,8 @@ h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.
 .slinks{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.92rem}
 .slinks a{text-decoration:none;border-bottom:2px solid var(--yellow)}
 @media (max-width:40rem){.sgallery{grid-template-columns:minmax(0,1fr)}.reels{grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}.reels h4{font-size:.92rem}.slinks{font-size:.82rem}}
+.line.cols5{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:62rem){.line.cols5{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -289,7 +291,7 @@ h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.
 
 <section class="wrap block" aria-labelledby="e-how">
   <h2 id="e-how">How I run an event</h2>
-  <ol class="line" style="grid-template-columns:repeat(5,minmax(0,1fr))">
+  <ol class="line cols5">
     <li><strong>The brief</strong><span>What the day is for, who's coming, and what it can cost.</span></li>
     <li><strong>Suppliers</strong><span>Venue, production and catering, compared on real quotes.</span></li>
     <li><strong>The programme</strong><span>Who speaks when, and what everyone else is doing at that moment.</span></li>
