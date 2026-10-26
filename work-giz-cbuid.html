@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GIZ Egypt, CBUID | Mohamed Nour Elrouby</title>
+<meta name="description" content="Communications and visibility for an EU and BMZ co-funded urban infrastructure programme at GIZ Egypt: a presidential visit, a closing ceremony, two inaugurations and the World Urban Forum.">
+<meta property="og:title" content="GIZ Egypt, CBUID | Mohamed Nour Elrouby">
+<meta property="og:description" content="Communications and visibility for an EU and BMZ co-funded urban infrastructure programme at GIZ Egypt: a presidential visit, a closing ceremony, two inaugurations and the World Urban Forum.">
+<meta property="og:locale" content="en_GB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ECEBE6;
+  --paper-deep:#E1DFD8;
+  --ink:#1A1A18;
+  --ink-soft:#4A4944;
+  --rule:#C9C6BD;
+  --yellow:#E2B62D;
+  --measure:36rem;
+  --pad:clamp(1.25rem,5vw,4.5rem);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif;
+  font-size:1.125rem;line-height:1.7;
+}
+p{margin:0 0 1.2em;max-width:var(--measure)}
+p:last-child{margin-bottom:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+img{max-width:100%}
+
+.sans{font-family:"IBM Plex Sans",system-ui,sans-serif}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:.7rem 1.1rem;z-index:10;font-family:"IBM Plex Sans",system-ui,sans-serif}
+.skip:focus{left:0}
+
+.wrap{padding-left:var(--pad);padding-right:var(--pad);max-width:78rem;margin:0 auto}
+
+/* header */
+.top{
+  display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem 2rem;
+  padding-top:1.6rem;padding-bottom:1.6rem;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;
+}
+.top .mark{font-weight:600;text-decoration:none}
+.top nav{display:flex;flex-wrap:wrap;gap:1.4rem}
+.top nav a{text-decoration:none;border-bottom:2px solid transparent;padding-bottom:1px}
+.top nav a:hover{border-bottom-color:var(--yellow)}
+
+/* hero */
+.hero{
+  display:grid;grid-template-columns:minmax(0,1fr) clamp(14rem,26vw,20rem);
+  gap:clamp(2rem,5vw,4rem);align-items:end;
+  padding-top:clamp(2.5rem,8vw,6rem);padding-bottom:clamp(3rem,7vw,5.5rem);
+}
+h1{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;
+  font-size:clamp(2.6rem,6.2vw,4.8rem);line-height:1;letter-spacing:-.035em;
+  margin:0 0 1.4rem;
+}
+.role{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500;
+  font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.35;
+  margin:0 0 2rem;max-width:26rem;
+  padding-left:.9rem;border-left:6px solid var(--yellow);
+}
+.intro{font-size:1.2rem;color:var(--ink-soft);max-width:34rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1rem}
+.actions a{text-decoration:none;padding:.75rem 1.4rem;border:2px solid var(--ink)}
+.actions a.primary{background:var(--ink);color:var(--paper)}
+.actions a:hover{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.portrait{margin:0;aspect-ratio:4/5;background:var(--paper-deep);overflow:hidden}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(1) contrast(1.05)}
+
+/* sections */
+section{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--rule)}
+h2{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;
+  font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.02em;
+  margin:0 0 2.2rem;
+}
+h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.3rem;line-height:1.25;margin:0 0 .3rem}
+
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem;list-style:none;margin:0;padding:0}
+.proof li{padding-top:1.1rem;border-top:6px solid var(--yellow)}
+.proof strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.35rem;line-height:1.2;margin-bottom:.5rem}
+.proof span{display:block;font-size:1rem;line-height:1.55;color:var(--ink-soft)}
+
+/* work */
+.work{list-style:none;margin:0;padding:0}
+.work li{display:grid;grid-template-columns:15rem minmax(0,1fr) 11rem;gap:1.5rem 2.5rem;padding:1.8rem 0;border-top:1px solid var(--rule)}
+.work li:first-child{border-top:0;padding-top:0}
+.work .when{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;color:var(--ink-soft);margin:0}
+.work p.desc{margin:0}
+.work .fig{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.05rem;line-height:1.35;margin:0}
+.work .fig span{display:inline;background:linear-gradient(transparent 58%,var(--yellow) 58%)}
+
+/* transit line */
+.line{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr))}
+.line li{position:relative;padding:2.3rem .9rem 0 0}
+.line li::before{content:"";position:absolute;top:.5rem;left:0;right:0;height:6px;background:var(--yellow)}
+.line li:first-child::before{left:.6rem}
+.line li:last-child::before{right:auto;width:.7rem}
+.line li::after{content:"";position:absolute;top:0;left:0;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--paper);border:3px solid var(--ink)}
+.line li:first-child::after,.line li:last-child::after{background:var(--ink)}
+.line strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1rem;margin-bottom:.25rem}
+.line span{display:block;font-size:.95rem;line-height:1.45;color:var(--ink-soft)}
+
+/* notes */
+.notes{list-style:none;margin:0;padding:0;max-width:44rem}
+.notes li{padding:1rem 0;border-top:1px solid var(--rule);font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500;font-size:1.1rem}
+.notes li:first-child{border-top:0;padding-top:0}
+.muted{color:var(--ink-soft)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+.contact h2{color:#F5F4EF}
+.contact p{color:#CFCDC6}
+.contact a{color:#F5F4EF}
+.details{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;margin-top:2.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1.02rem}
+.details a{text-decoration:none;border-bottom:2px solid var(--yellow);padding-bottom:1px}
+.foot{margin-top:3rem;padding-top:1.2rem;border-top:1px solid #3A3934;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.85rem;color:#8F8C83;max-width:none}
+
+/* responsive */
+@media (max-width:62rem){
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .work li{grid-template-columns:minmax(0,1fr);gap:.6rem}
+  .line{grid-template-columns:minmax(0,1fr)}
+  .line li{padding:0 0 1.5rem 2.6rem}
+  .line li::before{top:0;bottom:0;left:.55rem;right:auto;width:6px;height:auto}
+  .line li:first-child::before{top:.6rem;left:.55rem}
+  .line li:last-child::before{display:none}
+  .line li::after{top:.1rem}
+}
+@media (max-width:40rem){
+  .hero{grid-template-columns:1fr}
+  .portrait{order:-1;max-width:15rem;aspect-ratio:1/1}
+  .proof{grid-template-columns:1fr}
+  body{font-size:1.06rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* inner pages */
+.page-head{padding-top:clamp(2.5rem,7vw,5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+.page-head h1{font-size:clamp(2.3rem,5.4vw,4rem);margin-bottom:1rem}
+.page-head .lede{font-size:1.2rem;color:var(--ink-soft);max-width:38rem}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;margin:1.6rem 0 0;padding:0;list-style:none;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.98rem}
+.facts li{padding-left:.7rem;border-left:4px solid var(--yellow)}
+.block{padding-top:clamp(2.5rem,6vw,4.5rem);padding-bottom:clamp(2.5rem,6vw,4.5rem);border-top:1px solid var(--rule)}
+.block h2{margin-bottom:1.6rem}
+.twocol{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:1rem 3rem}
+.items{list-style:none;margin:0;padding:0;max-width:44rem}
+.items li{padding:1.2rem 0;border-top:1px solid var(--rule)}
+.items li:first-child{border-top:0;padding-top:0}
+.items h3{margin-bottom:.4rem}
+.items p{margin:0}
+.ticks{margin:.3rem 0 0;padding-left:1.1rem;max-width:40rem}
+.ticks li{margin:.2rem 0;padding:0;border:0}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:1.6rem 2rem;list-style:none;margin:0;padding:0}
+.results li{padding-top:.8rem;border-top:6px solid var(--yellow)}
+.results strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.3rem;line-height:1.2;margin-bottom:.3rem}
+.results span{display:block;font-size:1rem;line-height:1.5;color:var(--ink-soft)}
+.note-small{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.92rem;color:var(--ink-soft);margin-top:1.4rem}
+.todo{border:2px dashed var(--ink-soft);background:var(--paper-deep);padding:1rem 1.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.98rem;line-height:1.55;max-width:44rem;margin:0 0 1.2rem}
+.todo b{font-weight:600}
+.timeline{list-style:none;margin:0;padding:0;max-width:52rem}
+.timeline li{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.4rem 2rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+.timeline li:first-child{border-top:0;padding-top:0}
+.timeline .yr{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1rem}
+.timeline p{margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.gallery figure{margin:0}
+.gallery .ph{aspect-ratio:4/3;background:var(--paper-deep);border:1px solid var(--rule);display:flex;align-items:flex-end;padding:.7rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.85rem;color:var(--ink-soft)}
+.gallery figcaption{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.9rem;margin-top:.45rem}
+.back{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;display:inline-block;margin-bottom:1.2rem;text-decoration:none;border-bottom:2px solid var(--yellow)}
+.nextcase{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.15rem;text-decoration:none;border-bottom:3px solid var(--yellow)}
+.top nav a[aria-current="page"]{border-bottom-color:var(--ink)}
+@media (max-width:62rem){
+  .twocol{grid-template-columns:minmax(0,1fr)}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .timeline li{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:40rem){.gallery{grid-template-columns:minmax(0,1fr)}}
+
+.sgroup{margin:2.4rem 0 1.2rem}
+.samples{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:2rem 1.6rem}
+.sample .thumb{aspect-ratio:16/9;background:var(--paper-deep);border:1px solid var(--rule);margin-bottom:.8rem;overflow:hidden}
+.sample .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.sample h4{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.05rem;line-height:1.3;margin:0 0 .3rem}
+.sample p{font-size:.98rem;line-height:1.5;color:var(--ink-soft);margin:0 0 .6rem}
+.slinks{display:flex;gap:1rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.92rem}
+.slinks a{text-decoration:none;border-bottom:2px solid var(--yellow)}
+
+.slist{list-style:none;margin:1.4rem 0 0;padding:0;max-width:48rem}
+.slist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.4rem 2rem;align-items:baseline;padding:.9rem 0;border-top:1px solid var(--rule)}
+.slist li:first-child{border-top:0}
+.slist h4{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.02rem;line-height:1.3;margin:0 0 .15rem}
+.slist p{font-size:.95rem;color:var(--ink-soft);margin:0}
+@media (max-width:40rem){.slist li{grid-template-columns:minmax(0,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="index.html">Mohamed Nour Elrouby</a>
+    <nav aria-label="Primary">
+      <a href="index.html#work" aria-current="page">Work</a>
+      <a href="events.html">Events</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+      <a href="cv.pdf">CV</a>
+    </nav>
+  </header>
+</div>
+<main id="main">
+
+<div class="wrap page-head">
+  <a class="back" href="index.html#work">Selected work</a>
+  <h1>GIZ Egypt, CBUID</h1>
+  <p class="lede">Communications and visibility for Capacity Building through Urban Infrastructure Development, an urban infrastructure programme co-funded by the European Union and BMZ.</p>
+  <ul class="facts">
+    <li>September 2024 to February 2025</li>
+    <li>Communication Advisor (Leave Coverage)</li>
+    <li>GIZ Egypt</li>
+  </ul>
+</div>
+
+<section class="wrap block" aria-labelledby="ctx">
+  <div class="twocol">
+    <h2 id="ctx">Context</h2>
+    <div>
+      <p>The programme's first phase ran from 2020 to 2024 in Alexandria, Beheira and Assiut. It covered public infrastructure, employment, construction and rehabilitation, and institutional development for climate-resilient and socially just urban development.</p>
+      <p>I joined for the final months of that phase, covering the communications and visibility role during a colleague's leave. That period held the programme's most public moments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap block" aria-labelledby="did">
+  <div class="twocol">
+    <h2 id="did">What I did</h2>
+    <ul class="items">
+      <li><h3>The German President's visit</h3>
+        <p>Facilitated the visit for the programme.</p>
+        <ul class="ticks"><li>Reception</li><li>PR support</li><li>Social media post and press release</li></ul></li>
+      <li><h3>Closing ceremony</h3>
+        <p>Planned and managed the event with the CBUID team and an external agency.</p>
+        <ul class="ticks"><li>VIP liaison with the minister, governors, government officials, the European Union and the German Embassy</li><li>Photos and videos exhibited to present the programme's achievements</li><li>Media relations</li><li>Directed the closing video with the agency</li></ul></li>
+      <li><h3>Inaugurations in Beheira and Alexandria</h3>
+        <p>Led PR and event delivery in Beheira, representing GIZ with the governor's office and Idko City Council. Assisted with PR and the event in Alexandria, working with the governor's office. Wrote the social media posts and chose the pictures for both.</p></li>
+      <li><h3>World Urban Forum</h3>
+        <p>Planned the pre-WUF tour and represented GIZ on it. Directed the GIZ at WUF video. Produced design and posts for four sessions, including the policy dialogue and a session on a just urban transition for African cities.</p></li>
+      <li><h3>Eight documentary videos</h3>
+        <p>Managed the production process with an agency under a GIZ service contract.</p></li>
+      <li><h3>Ongoing communication</h3>
+        <p>Posts on climate-resilient urban development and education, plus video translation and subtitles.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap block" aria-labelledby="res">
+  <h2 id="res">Programme results I communicated</h2>
+  <p>These are the first phase's outcomes, not mine. My job was to present them accurately to ministers, partners and the public.</p>
+  <ul class="results" style="margin-top:1.6rem">
+    <li><strong>750,000+ residents</strong><span>Living in the three target areas.</span></li>
+    <li><strong>800+ trainees</strong><span>In vocational training.</span></li>
+    <li><strong>446 of 598</strong><span>Entrepreneurship participants were women.</span></li>
+    <li><strong>345 officials</strong><span>Local administrators and operators trained in urban management.</span></li>
+    <li><strong>4 schools</strong><span>Rehabilitated, serving more than 4,500 students.</span></li>
+    <li><strong>140,000+ residents</strong><span>Served by two upgraded health units and a new emergency department at Abu Qir.</span></li>
+  </ul>
+</section>
+
+<section class="wrap block" aria-labelledby="smp">
+  <h2 id="smp">Samples</h2>
+  <p>Published by GIZ Egypt. What I did on each is noted underneath.</p>
+  <h3 class="sgroup">Events</h3>
+  <ul class="samples">
+<li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-presidential-visit.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-presidential-visit.jpg" alt="GIZ Egypt post about the German President's visit" loading="lazy" width="1200" height="675"></div>
+        <h4>The German President's visit</h4>
+        <p>Reception, PR support, press release and post.</p>
+        <div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_german-president-frank-walter-steinmeier-activity-7240032128455872513-A89t/" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid0XvJkgUurHnzmJsQp9wFLwkK5BAsfPXMykXd1J8v7ALU42WfRGQfdShuptn9Z7jK2l" rel="noopener">Facebook</a></div>
+      </li>
+<li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-closing-ceremony.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-closing-ceremony.jpg" alt="GIZ Egypt post about the CBUID closing ceremony" loading="lazy" width="1200" height="675"></div>
+        <h4>CBUID closing ceremony</h4>
+        <p>Event planning, VIP liaison, exhibited materials and the closing video.</p>
+        <div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_urbandevelopment-sustainablecities-activity-7272613647632265216-vygd/" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/videos/570620015679591/" rel="noopener">Facebook video</a></div>
+      </li>
+<li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-beheira.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-beheira.jpg" alt="GIZ Egypt post about the inauguration in Beheira" loading="lazy" width="1200" height="675"></div>
+        <h4>Urban development achievements in Beheira</h4>
+        <p>PR and event delivery, with the governor's office and Idko City Council.</p>
+        <div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_the-celebration-to-inaugurate-several-new-activity-7261692842379517954-Tvs0/" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid0WMzMfe78gxYcxwvoRyndFCo2ycxVrZcnPjGjqoM8SxPbJ8VBj1FKcBnkGZcyDrBwl" rel="noopener">Facebook</a></div>
+      </li>
+<li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-alexandria.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-alexandria.jpg" alt="GIZ Egypt post about the inauguration in Alexandria" loading="lazy" width="1200" height="675"></div>
+        <h4>Urban development achievements in Alexandria</h4>
+        <p>Assisted with PR and the event, with the governor's office.</p>
+        <div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_urban-development-achievements-in-alexandria-activity-7268158439497867264-2mzI" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid0DJYethr7W3eR1jVDN3KRRcvJifjf8U8TYuMiLWmhgshbTTrNbbEusVUAFZXfti3gl" rel="noopener">Facebook</a></div>
+      </li>
+  </ul>
+  <h3 class="sgroup">World Urban Forum</h3>
+  <ul class="samples"><li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-pre-wuf.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-pre-wuf.jpg" alt="GIZ Egypt post about the pre-WUF tour" loading="lazy" width="1200" height="675"></div>
+        <h4>Pre-WUF tour</h4>
+        <p>PR and event planning, representing GIZ.</p>
+        <div class="slinks"><a href="https://www.facebook.com/GIZEgypt/posts/pfbid0Xo6fysTdBKsj5MNW8h6JhEGS248TZC938X9jFnauR5hfxzYQfNSAeu9C635DpZq4l" rel="noopener">Facebook</a></div>
+      </li><li class="sample">
+        <!-- Thumbnail: save as thumbs/giz-wuf-video.jpg, 16:9 -->
+        <div class="thumb"><img src="thumbs/giz-wuf-video.jpg" alt="GIZ at the World Urban Forum video" loading="lazy" width="1200" height="675"></div>
+        <h4>GIZ at WUF video</h4>
+        <p>Directed the video.</p>
+        <div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_worldurbanforum-wuf12-activity-7260687400463388672-0L5y/" rel="noopener">LinkedIn</a></div>
+      </li></ul>
+  <ul class="slist"><li><div><h4>Towards a just urban transition for African cities</h4><p>Graphic design and post.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_wuf12-wuf12-germanyatwuf12-activity-7257831314039472129-FJNs" rel="noopener">LinkedIn</a></div></li><li><div><h4>Policy dialogue</h4><p>Graphic design and post.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_inclusivecities-climateresilience-gizegypt-activity-7260272020435726336-AQ2v" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid02DBEBLfjx2mPmUepk3xAqYmYwSKSMDbMxBKdbTW4pf1aTj4Na1QeacDyKG9SUhLfkl" rel="noopener">Facebook</a></div></li><li><div><h4>Unplanned informal settlements</h4><p>Post and picture selection.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_gizegypt-wuf12-sustainabledevelopment-activity-7260309201330053121-Ub64/" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid0vJNsGA3y3yLiUfRXeUR5hafBhB1UAFNMbPsxowNMTP3tVtbg1rZukcn5gmTdCpu5l" rel="noopener">Facebook</a></div></li><li><div><h4>Locally adaptable technologies for refugee and IDP settlements</h4><p>Post and picture selection.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_as-the-world-urban-forum-continues-in-cairo-activity-7260232210765479938-okiv" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/posts/pfbid02kSzNPp24EKa3NrHuzha9PtbQj45SmvCJ51gNDPd4XHQ6L2zirKkgf9ZcP5fmD62jl" rel="noopener">Facebook</a></div></li></ul>
+  <h3 class="sgroup">Ongoing communication</h3>
+  <ul class="slist"><li><div><h4>Climate-resilient urban development</h4><p>Post, video translation and subtitles.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_urbanresilience-climateaction-sustainablecities-activity-7245442391065718784-AzSd" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/GIZEgypt/videos/8760427940731789/" rel="noopener">Facebook video</a></div></li><li><div><h4>Enhancing education in Egypt</h4><p>Post.</p></div><div class="slinks"><a href="https://www.linkedin.com/posts/gizegypt_educationforall-sustainabledevelopment-gizegypt-activity-7268544814357389313-lMFD" rel="noopener">LinkedIn</a><a href="https://www.facebook.com/watch/?v=1527859594757388" rel="noopener">Facebook video</a></div></li></ul>
+</section>
+
+<section class="wrap block" aria-labelledby="lrn">
+  <div class="twocol">
+    <h2 id="lrn">What I learned</h2>
+    <div>
+      <p>GIZ changed how I see institutions, and how I see my own work.</p>
+      <p>Before it, I had worked mostly in smaller NGOs, agencies and creative environments. This was my first time inside a large international institution, with its programmes, stakeholders, government partners and processes.</p>
+      <p>What surprised me most was how different the reality was from the image of it from outside. I met people who could be difficult or demanding, and who worked very differently from me, but who were also hardworking and responsible for work with real impact. It taught me to pay less attention to personalities and more to what people actually carry and produce.</p>
+      <p>It also changed how I understand communication. A press release, an event or a video is often the visible end of months of technical work, coordination and negotiation. Before I can communicate something well, I need to understand what sits behind it.</p>
+      <p>It did not make me idealise large institutions. It gave me a clearer idea of where I want my own work to sit, between substance, strategy and communication.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap block">
+  <a class="nextcase" href="work-the-digital-venture.html">Next case: The Digital Venture</a>
+</section>
+
+</main>
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Working together</h2>
+    <p>I'm open to conversations about communications roles, events, consulting and training. For production and campaign work, The Digital Venture is my agency.</p>
+    <div class="details">
+      <a href="mailto:mohamed.n.elrouby@gmail.com">mohamed.n.elrouby@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mnelrouby" rel="me">LinkedIn</a>
+      <a href="https://www.behance.net/mnelrouby" rel="me">Behance</a>
+      <a href="https://thedigitalventure.net">The Digital Venture</a>
+      <a href="cv.pdf">CV</a>
+    </div>
+    <p class="foot">Mohamed Nour Elrouby, Cairo, 2026.</p>
+  </div>
+</footer>
+</body>
+</html>

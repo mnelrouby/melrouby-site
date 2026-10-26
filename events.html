@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Events | Mohamed Nour Elrouby</title>
+<meta name="description" content="Events led and supported by Mohamed Nour Elrouby, including SehaGroup's first Annual Summit, GIZ inaugurations and a closing ceremony, and the World Urban Forum in Cairo.">
+<meta property="og:title" content="Events | Mohamed Nour Elrouby">
+<meta property="og:description" content="Events led and supported by Mohamed Nour Elrouby, including SehaGroup's first Annual Summit, GIZ inaugurations and a closing ceremony, and the World Urban Forum in Cairo.">
+<meta property="og:locale" content="en_GB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ECEBE6;
+  --paper-deep:#E1DFD8;
+  --ink:#1A1A18;
+  --ink-soft:#4A4944;
+  --rule:#C9C6BD;
+  --yellow:#E2B62D;
+  --measure:36rem;
+  --pad:clamp(1.25rem,5vw,4.5rem);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Spectral,Georgia,"Times New Roman",serif;
+  font-size:1.125rem;line-height:1.7;
+}
+p{margin:0 0 1.2em;max-width:var(--measure)}
+p:last-child{margin-bottom:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+img{max-width:100%}
+
+.sans{font-family:"IBM Plex Sans",system-ui,sans-serif}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:.7rem 1.1rem;z-index:10;font-family:"IBM Plex Sans",system-ui,sans-serif}
+.skip:focus{left:0}
+
+.wrap{padding-left:var(--pad);padding-right:var(--pad);max-width:78rem;margin:0 auto}
+
+/* header */
+.top{
+  display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:1rem 2rem;
+  padding-top:1.6rem;padding-bottom:1.6rem;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;
+}
+.top .mark{font-weight:600;text-decoration:none}
+.top nav{display:flex;flex-wrap:wrap;gap:1.4rem}
+.top nav a{text-decoration:none;border-bottom:2px solid transparent;padding-bottom:1px}
+.top nav a:hover{border-bottom-color:var(--yellow)}
+
+/* hero */
+.hero{
+  display:grid;grid-template-columns:minmax(0,1fr) clamp(14rem,26vw,20rem);
+  gap:clamp(2rem,5vw,4rem);align-items:end;
+  padding-top:clamp(2.5rem,8vw,6rem);padding-bottom:clamp(3rem,7vw,5.5rem);
+}
+h1{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;
+  font-size:clamp(2.6rem,6.2vw,4.8rem);line-height:1;letter-spacing:-.035em;
+  margin:0 0 1.4rem;
+}
+.role{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500;
+  font-size:clamp(1.05rem,1.8vw,1.3rem);line-height:1.35;
+  margin:0 0 2rem;max-width:26rem;
+  padding-left:.9rem;border-left:6px solid var(--yellow);
+}
+.intro{font-size:1.2rem;color:var(--ink-soft);max-width:34rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1rem}
+.actions a{text-decoration:none;padding:.75rem 1.4rem;border:2px solid var(--ink)}
+.actions a.primary{background:var(--ink);color:var(--paper)}
+.actions a:hover{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+.portrait{margin:0;aspect-ratio:4/5;background:var(--paper-deep);overflow:hidden}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(1) contrast(1.05)}
+
+/* sections */
+section{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--rule)}
+h2{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;
+  font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.02em;
+  margin:0 0 2.2rem;
+}
+h3{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.3rem;line-height:1.25;margin:0 0 .3rem}
+
+/* proof */
+.proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem;list-style:none;margin:0;padding:0}
+.proof li{padding-top:1.1rem;border-top:6px solid var(--yellow)}
+.proof strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.35rem;line-height:1.2;margin-bottom:.5rem}
+.proof span{display:block;font-size:1rem;line-height:1.55;color:var(--ink-soft)}
+
+/* work */
+.work{list-style:none;margin:0;padding:0}
+.work li{display:grid;grid-template-columns:15rem minmax(0,1fr) 11rem;gap:1.5rem 2.5rem;padding:1.8rem 0;border-top:1px solid var(--rule)}
+.work li:first-child{border-top:0;padding-top:0}
+.work .when{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;color:var(--ink-soft);margin:0}
+.work p.desc{margin:0}
+.work .fig{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.05rem;line-height:1.35;margin:0}
+.work .fig span{display:inline;background:linear-gradient(transparent 58%,var(--yellow) 58%)}
+
+/* transit line */
+.line{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr))}
+.line li{position:relative;padding:2.3rem .9rem 0 0}
+.line li::before{content:"";position:absolute;top:.5rem;left:0;right:0;height:6px;background:var(--yellow)}
+.line li:first-child::before{left:.6rem}
+.line li:last-child::before{right:auto;width:.7rem}
+.line li::after{content:"";position:absolute;top:0;left:0;width:1.35rem;height:1.35rem;border-radius:50%;background:var(--paper);border:3px solid var(--ink)}
+.line li:first-child::after,.line li:last-child::after{background:var(--ink)}
+.line strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1rem;margin-bottom:.25rem}
+.line span{display:block;font-size:.95rem;line-height:1.45;color:var(--ink-soft)}
+
+/* notes */
+.notes{list-style:none;margin:0;padding:0;max-width:44rem}
+.notes li{padding:1rem 0;border-top:1px solid var(--rule);font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500;font-size:1.1rem}
+.notes li:first-child{border-top:0;padding-top:0}
+.muted{color:var(--ink-soft)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+.contact h2{color:#F5F4EF}
+.contact p{color:#CFCDC6}
+.contact a{color:#F5F4EF}
+.details{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;margin-top:2.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:1.02rem}
+.details a{text-decoration:none;border-bottom:2px solid var(--yellow);padding-bottom:1px}
+.foot{margin-top:3rem;padding-top:1.2rem;border-top:1px solid #3A3934;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.85rem;color:#8F8C83;max-width:none}
+
+/* responsive */
+@media (max-width:62rem){
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .work li{grid-template-columns:minmax(0,1fr);gap:.6rem}
+  .line{grid-template-columns:minmax(0,1fr)}
+  .line li{padding:0 0 1.5rem 2.6rem}
+  .line li::before{top:0;bottom:0;left:.55rem;right:auto;width:6px;height:auto}
+  .line li:first-child::before{top:.6rem;left:.55rem}
+  .line li:last-child::before{display:none}
+  .line li::after{top:.1rem}
+}
+@media (max-width:40rem){
+  .hero{grid-template-columns:1fr}
+  .portrait{order:-1;max-width:15rem;aspect-ratio:1/1}
+  .proof{grid-template-columns:1fr}
+  body{font-size:1.06rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* inner pages */
+.page-head{padding-top:clamp(2.5rem,7vw,5rem);padding-bottom:clamp(2rem,5vw,3.5rem)}
+.page-head h1{font-size:clamp(2.3rem,5.4vw,4rem);margin-bottom:1rem}
+.page-head .lede{font-size:1.2rem;color:var(--ink-soft);max-width:38rem}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;margin:1.6rem 0 0;padding:0;list-style:none;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.98rem}
+.facts li{padding-left:.7rem;border-left:4px solid var(--yellow)}
+.block{padding-top:clamp(2.5rem,6vw,4.5rem);padding-bottom:clamp(2.5rem,6vw,4.5rem);border-top:1px solid var(--rule)}
+.block h2{margin-bottom:1.6rem}
+.twocol{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:1rem 3rem}
+.items{list-style:none;margin:0;padding:0;max-width:44rem}
+.items li{padding:1.2rem 0;border-top:1px solid var(--rule)}
+.items li:first-child{border-top:0;padding-top:0}
+.items h3{margin-bottom:.4rem}
+.items p{margin:0}
+.ticks{margin:.3rem 0 0;padding-left:1.1rem;max-width:40rem}
+.ticks li{margin:.2rem 0;padding:0;border:0}
+.results{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:1.6rem 2rem;list-style:none;margin:0;padding:0}
+.results li{padding-top:.8rem;border-top:6px solid var(--yellow)}
+.results strong{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.3rem;line-height:1.2;margin-bottom:.3rem}
+.results span{display:block;font-size:1rem;line-height:1.5;color:var(--ink-soft)}
+.note-small{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.92rem;color:var(--ink-soft);margin-top:1.4rem}
+.todo{border:2px dashed var(--ink-soft);background:var(--paper-deep);padding:1rem 1.2rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.98rem;line-height:1.55;max-width:44rem;margin:0 0 1.2rem}
+.todo b{font-weight:600}
+.timeline{list-style:none;margin:0;padding:0;max-width:52rem}
+.timeline li{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:.4rem 2rem;padding:1.1rem 0;border-top:1px solid var(--rule)}
+.timeline li:first-child{border-top:0;padding-top:0}
+.timeline .yr{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1rem}
+.timeline p{margin:0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.gallery figure{margin:0}
+.gallery .ph{aspect-ratio:4/3;background:var(--paper-deep);border:1px solid var(--rule);display:flex;align-items:flex-end;padding:.7rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.85rem;color:var(--ink-soft)}
+.gallery figcaption{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.9rem;margin-top:.45rem}
+.back{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem;display:inline-block;margin-bottom:1.2rem;text-decoration:none;border-bottom:2px solid var(--yellow)}
+.nextcase{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.15rem;text-decoration:none;border-bottom:3px solid var(--yellow)}
+.top nav a[aria-current="page"]{border-bottom-color:var(--ink)}
+@media (max-width:62rem){
+  .twocol{grid-template-columns:minmax(0,1fr)}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .timeline li{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:40rem){.gallery{grid-template-columns:minmax(0,1fr)}}
+
+.accounts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.7rem 1.5rem;max-width:44rem}
+.accounts li{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:500;font-size:1.05rem;padding-left:.8rem;border-left:4px solid var(--yellow)}
+
+.erecord{list-style:none;margin:0;padding:0;max-width:56rem}
+.erecord li{display:grid;grid-template-columns:minmax(0,1fr) 13rem 7rem;gap:.3rem 2rem;padding:1rem 0;border-top:1px solid var(--rule);align-items:baseline}
+.erecord li:first-child{border-top:0;padding-top:0}
+.erecord h3{font-size:1.08rem;margin:0}
+.erecord .who{display:block;font-size:.98rem;color:var(--ink-soft);margin-top:.15rem}
+.erecord .role,.erecord .yr{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.95rem}
+.erecord .role{font-weight:500}
+.erecord .yr{color:var(--ink-soft)}
+.egroup{margin:2.6rem 0 1rem;font-size:1.15rem}
+.egroup:first-of-type{margin-top:0}
+@media (max-width:48rem){.erecord li{grid-template-columns:minmax(0,1fr)}}
+
+.sgallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:62rem}
+.sgallery figure{margin:0;overflow:hidden;background:var(--paper-deep)}
+.sgallery .big{grid-column:1 / -1}
+.sgallery img{display:block;width:100%;height:auto}
+.reels{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.6rem;max-width:44rem}
+.reels img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:var(--paper-deep)}
+.reels h4{font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:600;font-size:1.05rem;margin:.7rem 0 .3rem}
+.slinks{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:.92rem}
+.slinks a{text-decoration:none;border-bottom:2px solid var(--yellow)}
+@media (max-width:40rem){.sgallery{grid-template-columns:minmax(0,1fr)}.reels{grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem}.reels h4{font-size:.92rem}.slinks{font-size:.82rem}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="index.html">Mohamed Nour Elrouby</a>
+    <nav aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+      <a href="cv.pdf">CV</a>
+    </nav>
+  </header>
+</div>
+<main id="main">
+
+<div class="wrap page-head">
+  <h1>Events</h1>
+  <p class="lede">I've spent a lot of my career in event rooms. First behind the camera, then running the communications, and now running the whole thing.</p>
+</div>
+
+<section class="wrap block" id="summit" aria-labelledby="e-sum">
+  <h2 id="e-sum">SehaGroup Annual Summit</h2>
+  <ul class="facts" style="margin:0 0 2rem"><li>18 October 2026</li><li>Creativa Innovation Hub, Sultan Hussein Kamel Palace, Cairo</li><li>In partnership with Chubb Life</li></ul>
+  <ul class="results">
+    <li><strong>250+ guests</strong><span>At the first edition of the summit.</span></li>
+    <li><strong>EGP 1M+</strong><span>Event budget managed.</span></li>
+    <li><strong>End to end</strong><span>From planning and suppliers to the day itself.</span></li>
+  </ul>
+  <div class="twocol" style="margin-top:2.4rem">
+    <h3 style="margin:0">What I did</h3>
+    <div>
+      <p>I ran it from the first plan to the last guest leaving: the venue, production, catering, the programme, and an external PR agency. Along the way I kept SehaGroup's CEO up to date with status presentations and supplier price comparisons, so decisions were made on real options. We also prepared the presentations for the apps SehaGroup launched that day.</p>
+      <p>Not everything went perfectly. The client wasn't happy with the screen quality on the day, so I went back to the production supplier and got a discount.</p>
+    </div>
+  </div>
+  <div class="sgallery" style="margin-top:2.4rem">
+    <figure class="big"><img src="summit/photo-stage.jpg" alt="SehaGroup's CEO speaking on stage to a full audience at the Annual Summit" loading="lazy" width="1600" height="1066"></figure>
+    <figure><img src="summit/photo-audience.jpg" alt="A speaker addressing guests, with SehaOne, SehaTech and SehaAcademy flags behind them" loading="lazy" width="1600" height="1066"></figure>
+    <figure><img src="summit/photo-dinner.jpg" alt="Dinner tables set in the palace courtyard before guests arrived" loading="lazy" width="1600" height="1066"></figure>
+    <figure><img src="summit/photo-sehagroup-team.jpg" alt="SehaGroup's team on stage in front of the summit screen" loading="lazy" width="1600" height="1066"></figure>
+    <figure><img src="summit/photo-sehatech-chubb.jpg" alt="SehaTech and Chubb Life representatives on stage" loading="lazy" width="1600" height="1066"></figure>
+  </div>
+
+  <h3 class="egroup" style="margin-top:2.8rem">Brand reels</h3>
+  <p class="muted" style="margin-bottom:1.4rem">Each SehaGroup brand had its own reel from the day.</p>
+  <ul class="reels">
+    <li><a href="https://www.facebook.com/reel/3425145407670772" rel="noopener"><img src="summit/reel-sehaone.jpg" alt="SehaOne flag at the summit, the cover of the SehaOne reel" loading="lazy" width="540" height="960"></a><h4>SehaOne</h4><div class="slinks"><a href="https://www.facebook.com/reel/3425145407670772" rel="noopener">Watch the reel</a><a href="https://www.facebook.com/SehaOneEgypt/posts/pfbid031QTuAbjscnxgKY4dU168LfUS9XgyfzhS9UraCSabEssrSkhLR8oLpR5vCAds9wNVl" rel="noopener">Photos</a></div></li>
+    <li><a href="https://www.facebook.com/reel/4555491344698642" rel="noopener"><img src="summit/reel-sehatech.jpg" alt="SehaTech flag at the summit, the cover of the SehaTech reel" loading="lazy" width="540" height="960"></a><h4>SehaTech</h4><div class="slinks"><a href="https://www.facebook.com/reel/4555491344698642" rel="noopener">Watch the reel</a><a href="https://www.facebook.com/SehaTechEG/posts/pfbid027ARuFacr158oef4r2DyQMLxg5wTUS58xHNWwfD5hBjCvqPvM2SyU1zWmrx1ykMbVl" rel="noopener">Photos</a></div></li>
+    <li><a href="https://www.facebook.com/reel/1543589227804387" rel="noopener"><img src="summit/reel-sehaacademy.jpg" alt="SehaAcademy flag at the summit, the cover of the SehaAcademy reel" loading="lazy" width="540" height="960"></a><h4>SehaAcademy</h4><div class="slinks"><a href="https://www.facebook.com/reel/1543589227804387" rel="noopener">Watch the reel</a><a href="https://www.facebook.com/sehaacademyeg/posts/pfbid031cFzWVFXt4Jk1iNdy5Xd4o8GmKdrmezp8hrR2Lreev8EWTqXoaawWENR3f4KRaeWl" rel="noopener">Photos</a></div></li>
+  </ul>
+</section>
+
+<section class="wrap block" aria-labelledby="e-rec">
+  <h2 id="e-rec">Other events</h2>
+  <p class="muted" style="margin-bottom:2rem">My role was different each time, so it's listed beside each one.</p>
+  <h3 class="egroup">Ran or managed</h3>
+  <ul class="erecord"><li><div><h3>CBUID closing ceremony</h3><span class="who">GIZ Egypt, with ministers, governors, the EU and the German Embassy</span></div><span class="role">Planned and managed, with an agency</span><span class="yr">2024</span></li><li><div><h3>Urban development achievements in Beheira</h3><span class="who">GIZ Egypt, with the governor's office and Idko City Council</span></div><span class="role">Led PR and event delivery</span><span class="yr">2024</span></li><li><div><h3>Pre-World Urban Forum tour</h3><span class="who">GIZ Egypt</span></div><span class="role">Planned, and represented GIZ</span><span class="yr">2024</span></li><li><div><h3>Public events and programmes</h3><span class="who">Meeting Point of Civilizations, with NGOs, embassies and cultural institutions</span></div><span class="role">Organised</span><span class="yr">2018 to 2026</span></li></ul>
+  <h3 class="egroup">Communications</h3>
+  <ul class="erecord"><li><div><h3>The German President's visit</h3><span class="who">GIZ Egypt</span></div><span class="role">Reception, PR and press</span><span class="yr">2024</span></li><li><div><h3>Urban development achievements in Alexandria</h3><span class="who">GIZ Egypt, with the governor's office</span></div><span class="role">Assisted with PR and the event</span><span class="yr">2024</span></li><li><div><h3>World Urban Forum, Cairo</h3><span class="who">GIZ Egypt, four sessions</span></div><span class="role">Communications, design and video</span><span class="yr">2024</span></li></ul>
+  <h3 class="egroup">Photography and video</h3>
+  <ul class="erecord"><li><div><h3>Embassy of Finland events</h3><span class="who">Embassy of Finland in Cairo, through The Digital Venture</span></div><span class="role">Photography and videography</span><span class="yr">2021 to 2022</span></li><li><div><h3>Unilever events</h3><span class="who">Unilever</span></div><span class="role">Photography and videography</span><span class="yr">2016 to 2022</span></li><li><div><h3>Techne Summit</h3><span class="who">Through Innovideas</span></div><span class="role">Lead photographer</span><span class="yr">2016 to 2018</span></li><li><div><h3>Egyptian Engineering Day</h3></div><span class="role">Photography</span><span class="yr">2011 to 2016</span></li></ul>
+  <p class="note-small" style="margin-top:1.6rem">More on the GIZ events in the <a href="work-giz-cbuid.html">GIZ case</a>.</p>
+</section>
+
+<section class="wrap block" aria-labelledby="e-how">
+  <h2 id="e-how">How I run an event</h2>
+  <ol class="line" style="grid-template-columns:repeat(5,minmax(0,1fr))">
+    <li><strong>The brief</strong><span>What the day is for, who's coming, and what it can cost.</span></li>
+    <li><strong>Suppliers</strong><span>Venue, production and catering, compared on real quotes.</span></li>
+    <li><strong>The programme</strong><span>Who speaks when, and what everyone else is doing at that moment.</span></li>
+    <li><strong>On the day</strong><span>On site from set-up to close, fixing whatever breaks.</span></li>
+    <li><strong>Afterwards</strong><span>Photos, video, bills settled, and what to change next time.</span></li>
+  </ol>
+</section>
+
+<section class="wrap block" aria-labelledby="e-cta">
+  <h2 id="e-cta">Planning an event?</h2>
+  <p>Tell me the date, who's coming and roughly the budget, and we'll take it from there. <a href="mailto:mohamed.n.elrouby@gmail.com">mohamed.n.elrouby@gmail.com</a></p>
+</section>
+
+</main>
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Working together</h2>
+    <p>I'm open to conversations about communications roles, events, consulting and training. For production and campaign work, The Digital Venture is my agency.</p>
+    <div class="details">
+      <a href="mailto:mohamed.n.elrouby@gmail.com">mohamed.n.elrouby@gmail.com</a>
+      <a href="https://www.linkedin.com/in/mnelrouby" rel="me">LinkedIn</a>
+      <a href="https://www.behance.net/mnelrouby" rel="me">Behance</a>
+      <a href="https://thedigitalventure.net">The Digital Venture</a>
+      <a href="cv.pdf">CV</a>
+    </div>
+    <p class="foot">Mohamed Nour Elrouby, Cairo, 2026.</p>
+  </div>
+</footer>
+</body>
+</html>
